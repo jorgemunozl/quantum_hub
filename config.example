@@ -1,0 +1,26 @@
+# Music No Bother Configuration
+# Copy this file to ~/.config/music-no-bother/config and modify as needed
+
+# Music directories
+MUSIC_DIR="/home/jorge/Videos/music"
+VOICE_DIR="/home/jorge/Videos/music/voice"
+
+# MPV socket path
+SOCKET_PATH="/tmp/mpvsocket"
+
+# Default audio quality for downloads (0 = best, 9 = worst)
+AUDIO_QUALITY=0
+
+# Default audio format
+AUDIO_FORMAT="mp3"
+
+# MPV options
+MPV_SHUFFLE=true
+MPV_BACKGROUND=true
+
+# Aliases for easy access
+# Add these to your ~/.bashrc or ~/.zshrc:
+# alias voice='~/path/to/scripts/start-music.sh voice'
+# alias music='~/path/to/scripts/start-music.sh music'
+# alias music-pause='~/path/to/scripts/music-control.sh pause'
+# alias music-stop='~/path/to/scripts/music-control.sh stop'

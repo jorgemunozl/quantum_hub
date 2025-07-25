@@ -1,0 +1,18 @@
+The user has a playlist on YT, script to downloaded on using yt-ldp
+Saves all the music on a directory.
+
+It reproduces with :
+alias voice='nohup mpv --shuffle --input-ipc-server=/tmp/mpvsocket /home/jorge/Videos/music/voice/*.mp3 >/dev/null 2>&1 & disown; sleep 1; exit'
+
+To stop the music it do it with:
+
+
+#!/bin/bash
+echo 'cycle pause' | socat - /tmp/mpvsocket
+
+
+#!/bin/bash
+
+mpv --input-ipc-server=/tmp/mpvsocket /home/jorge/Videos/music/*.mp3
+
+then we remap those commands to some keys
