@@ -8,19 +8,35 @@ VOICE_DIR="/home/jorge/Videos/music/voice"
 # MPV socket path
 SOCKET_PATH="/tmp/mpvsocket"
 
-# Default audio quality for downloads (0 = best, 9 = worst)
-AUDIO_QUALITY=0
+# Download settings
+AUDIO_QUALITY=0          # 0 = best, 9 = worst
+AUDIO_FORMAT="mp3"       # mp3, m4a, flac, ogg
 
-# Default audio format
-AUDIO_FORMAT="mp3"
-
-# MPV options
+# MPV playback settings
 MPV_SHUFFLE=true
 MPV_BACKGROUND=true
+DEFAULT_VOLUME=70
+LOOP_PLAYLIST=true
 
-# Aliases for easy access
-# Add these to your ~/.bashrc or ~/.zshrc:
+# Keyboard shortcuts (add these to your ~/.bashrc or ~/.zshrc)
+# You can customize the paths below to match your installation
+
+# Basic aliases
 # alias voice='~/path/to/scripts/start-music.sh voice'
 # alias music='~/path/to/scripts/start-music.sh music'
+# alias music-status='~/path/to/scripts/music-control.sh status'
+
+# Control aliases  
 # alias music-pause='~/path/to/scripts/music-control.sh pause'
 # alias music-stop='~/path/to/scripts/music-control.sh stop'
+# alias music-next='~/path/to/scripts/music-control.sh next'
+# alias music-prev='~/path/to/scripts/music-control.sh prev'
+
+# Volume aliases
+# alias music-vol-up='~/path/to/scripts/music-control.sh vol+'
+# alias music-vol-down='~/path/to/scripts/music-control.sh vol-'
+# alias music-mute='~/path/to/scripts/music-control.sh mute'
+
+# Advanced shortcuts (optional)
+# alias shuffle='~/path/to/scripts/music-control.sh shuffle'
+# alias restart='~/path/to/scripts/music-control.sh restart'
