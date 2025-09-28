@@ -1,0 +1,6 @@
+qiskit
+qiskit-ibm-runtime
+qiskit_aer
+matplotlib
+pylatexenc
+prototype-zne
