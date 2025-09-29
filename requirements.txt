@@ -4,3 +4,4 @@ qiskit_aer
 matplotlib
 pylatexenc
 prototype-zne
+jupyter
