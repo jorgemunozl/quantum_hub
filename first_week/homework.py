@@ -14,6 +14,12 @@ def generate_state(theta, phi):
 
     return np.array([e1, e2])
 
+angle = 3*np.pi/4 * 1j
+
+value = 1/2*(1-np.exp(angle))
+print(value)
+
+# [0.14644661+0.35355339j 0.85355339-0.35355339j]
 
 def generar_statevectors(rotaciones, repiticiones):
     theta_0 = np.pi/2
@@ -51,12 +57,13 @@ repiticiones = 5
 resultados = generar_statevectors(rotaciones, repiticiones)
 
 for i in range(1, repiticiones+1):
-    print(f"estado_{i}", end=" ")
-    print(resultados[i-1][f"estado_{i}_ang"], end=" ")
-    print(resultados[i-1][f"estado_{i}_vector"])
+    pass
+   # print(f"estado_{i}", end=" ")
+  #  print(resultados[i-1][f"estado_{i}_ang"], end=" ")
+ #   print(resultados[i-1][f"estado_{i}_vector"])
 
 angles_state_2 = resultados[1]["estado_2_ang"]
 
 pos = bloch_sphere_pos(angles_state_2['phi'], angles_state_2['theta'])
 
-print("estado 2 : [x,y,z]", [round(float(x), 2) for x in pos])
+#print("estado 2 : [x,y,z]", [round(float(x), 2) for x in pos])
