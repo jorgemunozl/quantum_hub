@@ -10,3 +10,8 @@ dependencies = [
     "qiskit>=2.3.1",
     "qiskit-aer>=0.17.2",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.9",
+]
